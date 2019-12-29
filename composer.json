@@ -1,0 +1,28 @@
+{
+    "name": "aditamairham/joke",
+    "description": "First make package with laravel.",
+    "type": "composer-plugin",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Lucky Irham Aditama",
+            "email": "aditama@crocodic.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "aditamairham\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel" : {
+            "providers" : [
+                "aditamairham\\Commands\\ArtisanJokeServiceProvider"
+            ]
+        }
+    }
+}
